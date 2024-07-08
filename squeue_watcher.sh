@@ -6,7 +6,7 @@ for CYCLE in $(seq 1 100)
 do
 echo "cycle number ${CYCLE} /100"
 date +'%r'
-squeue -u "${usr"
+squeue -u "${usr}"
 linenumber2=$(squeue -u "${usr}" | wc -l)
 if [[ $linenumber -ne $linenumber2 ]]; then
 diff=$((linenumber2 - linenumber))
